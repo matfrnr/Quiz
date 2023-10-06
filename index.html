@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="quiz">
+      <div id="welcomeScreen" class="welcomeScreen">
+        <h1 class="quizTitle">Bienvenue sur le quiz !</h1>
+        <p class="quizDescription">
+          Il sera composé de <span class="nbQuestions">X</span> questions...
+        </p>
+        <button class="quizBtn" id="buttonWelcome">OK</button>
+      </div>
+
+      <div id="questionScreen" class="questionScreen"></div>
+
+      <div id="resultScreen" class="resultScreen">
+        <h1 class="quizSubTitle">Résultats !</h1>
+        <p class="quizDescription">
+          <span id="nbcorrects">X</span>
+          réponses sur <span class="nbQuestions"></span>
+        </p>
+        <button id="restartButton" class="quizBtn">Recommencer</button>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
